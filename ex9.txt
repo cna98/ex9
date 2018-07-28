@@ -1,0 +1,27 @@
+
+//تا وارد شدن -1 عدد بخواند و کوچکترین را نمایش دهد
+
+package ex9;
+
+import java.util.Scanner;
+
+public class Ex9 {
+
+	public static void main(String[]args)
+	{
+		int number , min;
+		System.out.print("Enter number:\t");
+		Scanner input = new Scanner(System.in);
+		number = input.nextInt();
+		min = number;
+		while(number != -1)
+		{
+			if(min > number)
+				min = number;
+			number = input.nextInt();
+		}
+		
+		System.out.printf("Minimum is %d", min);
+		
+	}
+}
